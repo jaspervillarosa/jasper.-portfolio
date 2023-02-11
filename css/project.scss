@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css? family=WorkSans&display=swap');
+
+@mixin body-font {
+
+    font-family: 'WorkSans', sans-serif;
+}
+
+@mixin project-styles{
+
+    margin: 0;
+    font-family: 'WorkSans', sans-serif;
+    background: var(--background);
+
+    .container{
+
+        padding-top: 10rem;
+
+        h1{
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 4rem;
+        }
+        .wrapper-proj{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: auto;
+    
+            .container-overlay{
+                margin-bottom: 4rem;
+                display: flex;
+                justify-content: center;
+                position: relative;
+                width: 100%;
+                height: auto;
+                &:hover{
+                    opacity: 1;
+                } 
+                .overlay {
+                    border-radius: 10px;
+                    z-index: 9999;
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    height: 100%;
+                    width: 100%;
+                    opacity: 0;
+                    transition: .5s ease;
+                    background-color: lightgray;
+                    &:hover {
+                        opacity: 1;
+                      }
+                  }
+                img{
+                    display: block;
+                    max-width: 100%;
+                    height: auto;
+                    border-radius: 10px;
+                }
+                .text{
+                    width: 100%;
+                    color: #555555;
+                    font-size: 20px;
+                    position: absolute;
+                    top: 40%;
+                    left: 50%;
+                    -webkit-transform: translate(-50%, -50%);
+                    -ms-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
+                    text-align: center;
+                }
+                .text-two{
+                    color: #555555;
+                    font-size: 20px;
+                    position: absolute;
+                    top: 55%;
+                    left: 50%;
+                    -webkit-transform: translate(-50%, -50%);
+                    -ms-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
+                    text-align: center;
+                }
+                .text-three{
+                    color: white;
+                    font-size: 1em;
+                    position: absolute;
+                    top: 70%;
+                    left: 50%;
+                    -webkit-transform: translate(-50%, -50%);
+                    -ms-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
+                    text-align: center;
+                    a{
+                        text-decoration: none;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+  
+      
+    @media only screen and (min-width: 1020px){
+
+        .container{
+            padding-top: 12rem;
+            padding-bottom: 10rem;
+            h1 {
+                text-align: center;
+                font-size: 4rem;
+                margin-bottom: 8rem;
+                font-weight: bold;
+            }
+            .wrapper-proj{
+                display: flex;
+                gap: 2rem;
+                justify-content: center;
+                flex-direction: row;
+                height: auto;
+
+                .container-overlay{
+                    display: flex;
+                    justify-content: center;
+                    position: relative;
+                    width: 100%;
+                    height: auto;
+                    &:hover{
+                        opacity: 1;
+                    } 
+                    .overlay {
+                        border-radius: 10px;
+                        z-index: 9999;
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        height: 100%;
+                        width: 100%;
+                        opacity: 0;
+                        transition: .5s ease;
+                        background-color: lightgray;;
+                        &:hover {
+                            opacity: 1;
+                          }
+                      }
+                    img{
+                        display: block;
+                        max-width: 100%;
+                        height: auto;
+                        border-radius: 10px;
+                    }
+                    .text{
+                        width: 100%;
+                        color: #555555;
+                        font-size: 20px;
+                        position: absolute;
+                        top: 40%;
+                        left: 50%;
+                        -webkit-transform: translate(-50%, -50%);
+                        -ms-transform: translate(-50%, -50%);
+                        transform: translate(-50%, -50%);
+                        text-align: center;
+                    }
+                    .text-two{
+                        color: #555555;
+                        font-size: 20px;
+                        position: absolute;
+                        top: 55%;
+                        left: 50%;
+                        -webkit-transform: translate(-50%, -50%);
+                        -ms-transform: translate(-50%, -50%);
+                        transform: translate(-50%, -50%);
+                        text-align: center;
+                    }
+                    .text-three{
+                        color: white;
+                        font-size: 1em;
+                        position: absolute;
+                        top: 70%;
+                        left: 50%;
+                        -webkit-transform: translate(-50%, -50%);
+                        -ms-transform: translate(-50%, -50%);
+                        transform: translate(-50%, -50%);
+                        text-align: center;
+                        a{
+                            text-decoration: none;
+                            color: white;
+                        }
+                    }
+                }
+            }
+           
+        }
+    }
+        
+}
+
+body{
+
+    @include project-styles();
+    @include body-font();
+}
