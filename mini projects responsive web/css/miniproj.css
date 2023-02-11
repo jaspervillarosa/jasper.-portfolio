@@ -177,11 +177,11 @@ nav a:hover {
   color: #555555;
 }
 .primary-content .firstarticle .wrap-container-card .column-card-one, .primary-content .secarticle .wrap-container-card .column-card-one {
-  width: 12.5rem;
+  width: 16rem;
   height: auto;
 }
 .primary-content .firstarticle .column-card-two {
-  width: 12.5rem;
+  width: 16rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -193,7 +193,7 @@ nav a:hover {
   height: 100%;
 }
 .primary-content .secarticle .column-card-two {
-  width: 12.5rem;
+  width: 16rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -206,10 +206,8 @@ nav a:hover {
   width: 100%;
 }
 .primary-content .secarticle .column-card-two .card-body h5 {
-  position: absolute;
-  padding-left: 9rem;
-  margin-bottom: 0;
-  margin-top: 46rem;
+  margin-left: 10rem;
+  margin-bottom: 5rem;
   width: 100%;
 }
 @media only screen and (min-width: 1020px) {
@@ -275,11 +273,7 @@ nav a:hover {
     height: 100% !important;
   }
   .primary-content .secarticle .column-card-two h5 {
-    position: absolute !important;
-    padding-left: 0rem !important;
-    margin-bottom: 0 !important;
-    margin-top: 0.5rem !important;
-    width: 100% !important;
+    margin-left: 0 !important;
   }
 }
 
