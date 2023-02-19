@@ -46,12 +46,14 @@ body .container .wrapper-proj .container-overlay .overlay {
 }
 body .container .wrapper-proj .container-overlay .overlay:hover {
   opacity: 1;
+  z-index: -100;
 }
 body .container .wrapper-proj .container-overlay img {
   display: block;
   max-width: 100%;
   height: auto;
   border-radius: 10px;
+  z-index: -300;
 }
 body .container .wrapper-proj .container-overlay .text {
   width: 100%;
@@ -136,12 +138,14 @@ body .container .wrapper-proj .container-overlay .text-three a {
   }
   body .container .wrapper-proj .container-overlay .overlay:hover {
     opacity: 1;
+    z-index: -100;
   }
   body .container .wrapper-proj .container-overlay img {
     display: block;
     max-width: 100%;
     height: auto;
     border-radius: 10px;
+    z-index: -300;
   }
   body .container .wrapper-proj .container-overlay .text {
     width: 100%;
